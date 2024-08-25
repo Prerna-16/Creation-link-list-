@@ -1,0 +1,54 @@
+// create a link list
+
+#include<stdio.h>
+
+#include<malloc.h>
+
+struct node
+
+{
+
+ int data;
+
+ struct node * next;
+
+};
+
+void main()
+
+{
+
+ struct node *p, *q ,*r ,*s;
+
+ p=(struct node*)malloc(sizeof(struct node));
+
+ p-> data = 5;
+
+ p-> next = q;
+
+ q=(struct node*)malloc(sizeof(struct node));
+
+ q-> data = 10;
+
+ q-> next = r;
+
+ r=(struct node*)malloc(sizeof(struct node));
+
+ r-> data = 15;
+
+ r-> next = s;
+
+ s=(struct node*)malloc(sizeof(struct node));
+
+ s-> data = 20;
+s-> next = NULL;
+
+ printf("The value of p =%d\naddress of p=%p\n",p->data, p->next);
+
+ printf("The value of q =%d\naddress of q=%p\n",q->data,q->next);
+
+ printf("The value of r =%d\naddress of r=%p\n",r->data,r->next);
+
+ printf("The value of s =%d\naddress of s=%p\n",s->data,s->next);
+
+}
